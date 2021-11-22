@@ -16,11 +16,11 @@ let todo = inputBox.value;
 let newTodo = document.createElement('li');
 newTodo.textContent= todo; 
 todoList.appendChild(newTodo);
+inputBox.value= "";
 }
 
 const clearToDoHandler = () => {
  while (todoList.hasChildNodes()){ 
-
 todoList.removeChild(todoList.firstChild)
  } 
 
